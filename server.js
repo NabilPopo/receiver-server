@@ -5,8 +5,6 @@ app.use(express.json());
 
 app.use((req, res) => {
   console.log(req.method, req.url);
-  console.log('Headers:', req.headers);
-  console.log('Body:', req.body);
   res.send('Received!');
 });
 
